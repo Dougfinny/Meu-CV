@@ -1,0 +1,148 @@
+:root {
+  --margin-y-axis: 56px;
+  --margin-x-axis: 24px;
+
+  --black: #1a1a1a;
+  --white: #f6f6f6;
+  --blue-gray: #293e49;
+  --gray: #b6b6b6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body,
+html {
+  width: 210mm;
+  height: 297mm;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.contact-info {
+  background-color: var(--blue-gray);
+  color: var(--white);
+  z-index: 1;
+  padding: var(--margin-y-axis) var(--margin-x-axis);
+}
+
+.contact-info h1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.contact-info > p {
+  margin: 8px 0 16px;
+  font-size: 0.95rem;
+}
+
+.contact-info .contact-linkedin p {
+  color: var(--gray);
+  display: inline;
+}
+
+.main-info {
+  box-shadow: 0 4px 24px 16px #cccccc;
+  position: relative;
+  color: var(--black);
+  padding: var(--margin-y-axis) var(--margin-x-axis);
+}
+
+.main-info .container {
+  margin: 16px 0;
+}
+
+.main-info hr {
+  width: 60px;
+  background-color: var(--gray);
+}
+
+.main-info .personal-info h1 {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+.main-info .personal-info h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.main-info .personal-info p {
+  color: var(--gray);
+}
+
+.main-info .experience-container h2 {
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.main-info .experience-info {
+  margin: 32px 0;
+}
+
+.main-info .experience-info h3 {
+  font-weight: 500;
+}
+
+.main-info .experience-info h3.title {
+  line-height: 1.45rem;
+  font-size: 1.1rem;
+}
+
+.main-info .experience-info h3.objective {
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.main-info .experience-info h3.date {
+  line-height: 1.3rem;
+  font-size: 0.9rem;
+}
+
+.main-info .experience-info h3.location {
+  line-height: 1.3rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.main-info .experience-info .description {
+  line-height: 1.6rem;
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+
+.main-info .academy-container h2 {
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.main-info .academy-formation h3.title {
+  line-height: 1.6rem;
+  font-weight: 300;
+}
+
+.main-info .academy-formation p.description {
+  line-height: 1.6rem;
+  font-size: 0.9rem;
+}
+
+.main-info .page-number {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 24px;
+  font-size: 0.9rem;
+}
